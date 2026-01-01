@@ -21,6 +21,8 @@ const initialState = anecdotesAtStart.map(asObject);
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case "NEW_ANECDOTE":
+      return [...state, asObject(action.payload.content)];
     case "VOTE":
       return state.map((anecdote) =>
         anecdote.id === action.payload.id
