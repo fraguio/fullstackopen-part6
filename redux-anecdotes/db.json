@@ -1,5 +1,5 @@
 {
-  "anecdotes":[
+  "anecdotes": [
     {
       "content": "If it hurts, do it more often",
       "id": "47145",
@@ -28,6 +28,16 @@
     {
       "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
       "id": "98312",
+      "votes": 0
+    },
+    {
+      "id": "9f2b",
+      "content": "Your sound is in your hands as much as anything… It’s the way you pick, and the way you hold the guitar, more than the amp or guitar you use",
+      "votes": 0
+    },
+    {
+      "id": "8d40",
+      "content": "If you lack technique you lose the freedom to create",
       "votes": 0
     }
   ]
