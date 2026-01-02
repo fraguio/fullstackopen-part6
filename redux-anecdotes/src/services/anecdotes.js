@@ -14,6 +14,20 @@ const createNew = async (content) => {
   return await response.json();
 };
 
+const update = async (anecdote) => {
+  const response = await fetch(`${baseUrl}/${anecdote.id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(anecdote),
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to update anecdote");
+  }
+
+  return await response.json();
+};
+
 const getAll = async () => {
   const response = await fetch(baseUrl);
 
@@ -24,4 +38,4 @@ const getAll = async () => {
   return await response.json();
 };
 
-export default { createNew, getAll };
+export default { createNew, getAll, update };
